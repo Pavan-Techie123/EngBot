@@ -11,7 +11,7 @@ from pydub import AudioSegment
 from gtts import gTTS
 
 # ====== CONFIG ======
-BOT_TOKEN = "8272158952:AAF7Bptx0x93gJx_9QY3YVl7CHZg_fry0gU"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 LT_API_URL = "https://api.languagetool.org/v2/check"
 TMP_DIR = "/tmp"  # or any writable temp folder
 
